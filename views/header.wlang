@@ -1,0 +1,13 @@
+<div id="nav" class="row">
+  <div class="span12">
+    <nav class="masthead">
+      <ul class="nav nav-pills pull-right">
+        *{menu}{
+          <li class="?{active}{active}{passive}"><a href="+{url}">${label}</a></li>
+        }
+      </ul>
+    </nav>
+    <h2 class="muted"><a href="/">Try Kaos</a></h1>
+    <hr/>
+  <div>
+</div>

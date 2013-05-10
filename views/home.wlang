@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="span12">
+    <ul class="nav nav-pills pull-left" id="examples-tabs">
+      *{examples}{
+        <li class="?{active}{active}{passive}"><a href="/?example=+{id}">${label}</a></li>
+      }
+    </ul>
+    <form id="try-form">
+      <fieldset>
+        <textarea class="span12" name="source">+{model.source}</textarea>
+        <button type="submit" class="btn" id="try-submit">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <ul class="nav nav-tabs" id="model-tabs">
+      <li class="active"><a data-toggle="tab" href="#goal-diagram">Goal diagram</a></li>
+      <li><a data-toggle="tab" href="#analysis-feedback">Analysis feedback</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#agent-definitions" data-toggle="tab">Agents</a></li>
+          <li><a href="#goal-definitions" data-toggle="tab">Goals</a></li>
+          <li><a href="#domain-properties" data-toggle="tab">Domain properties</a></li>
+          <li><a href="#domain-hypotheses" data-toggle="tab">Domain hypotheses</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="span12">
+    <div class="tab-content">
+      <div class="tab-pane active" id="goal-diagram">
+        <div style="overflow: auto">
+          <img style="max-width: none;" src="data:image/png;base64,+{model.png_base64}"/>
+        </div>
+      </div>
+      <div class="tab-pane" id="analysis-feedback"></div>
+      <div class="tab-pane" id="agent-definitions">
+        #{model.agora_model.agents}{>{deftable}}
+      </div>
+      <div class="tab-pane" id="goal-definitions">
+        #{model.agora_model.goals}{>{deftable}}
+      </div>
+      <div class="tab-pane" id="domain-properties">
+        #{model.agora_model.domain_properties}{>{deftable}}
+      </div>
+      <div class="tab-pane" id="domain-hypotheses">
+        #{model.agora_model.domain_hypotheses}{>{deftable}}
+      </div>
+    </div>
+  </div>
+</div>

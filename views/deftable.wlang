@@ -1,0 +1,12 @@
+<table class="table table-hover table-condensed">
+  <tr>
+    <th class="name">Name</th>
+    <th class="definition">Definition</th>
+  </tr>
+  *{self}{
+    <tr>
+      <td class="nowrap">${name}</td>
+      <td>${definition}</td>
+    </tr>
+  }
+</table>

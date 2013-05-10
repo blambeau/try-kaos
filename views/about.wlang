@@ -1,0 +1,24 @@
+<div class="row">
+
+  <h2>About</h2>
+
+  <ul>
+    <li>Kaos (Keep All Objectives Satisfied) is a requirements engineering
+    language and method developed under the supervision of Axel van Lamsweerde
+    at the <a href="http://www.uclouvain.be">University of Louvain</a>.</li>
+
+    <li>The specification language has been designed by Antoine Cailliau. A
+    parser and analysis toolset developed in C# is freely available under a
+    MIT license and hosted on <a
+    href="https://github.com/ancailliau/KAOSTools">github</a>.</li>
+
+    <li>This try-kaos website is developed in Ruby by Bernard Lambeau and
+    hosted on <a href="https://github.com/blambeau/try-kaos">github</a> as
+    well.</li>
+  </ul>
+
+  <p>For any question about this web site or the underlying toolset, please
+  contact the <a href="https://github.com/ancailliau">Antoine Cailliau</a> or
+  <a href="https://github.com/blambeau">Bernard Lambeau</a>.</p>
+
+</div>
